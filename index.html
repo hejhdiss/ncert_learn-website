@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
         }
         .container {
             margin-top: 50px;
@@ -17,21 +18,62 @@
             text-align: center;
             margin-bottom: 50px;
         }
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.25rem;
+            color: #555;
+        }
         .section {
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
         .section h3 {
             color: #007bff;
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
         .footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 60px;
             font-size: 14px;
             color: #6c757d;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        pre code {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1rem;
+        }
+        .updates-section {
+            background-color: #e9f7fe;
+            border-left: 5px solid #007bff;
+            padding: 25px;
+        }
+        .updates-section ul {
+            padding-left: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -39,7 +81,7 @@
 
 <div class="container">
     <div class="header">
-        <h1 class="display-4">ncert_learn</h1>
+        <h1>ncert_learn</h1>
         <p class="lead">A Python Module for NCERT Class 12 Computer Science - Learn Python and MySQL with ease!</p>
     </div>
 
@@ -67,6 +109,18 @@
             <li>Text file manipulations and more!</li>
         </ul>
         <p>It is a comprehensive tool for practicing and learning Python programming and MySQL databases effectively.</p>
+    </div>
+
+    <div class="section updates-section">
+        <h3>Updates (Version 2.7.5)</h3>
+        <p>Here are the new updates in the latest release (2.7.5):</p>
+        <ul>
+            <li><strong>Expanded Mathematical Functions:</strong> More advanced checks for prime numbers, Armstrong numbers, and Niven numbers.</li>
+            <li><strong>Enhanced File Handling:</strong> Improved text file management, including copying contents between files.</li>
+            <li><strong>System Utilities:</strong> Added functions to fetch current Python interpreter path, processor details, and check network connectivity.</li>
+            <li><strong>MySQL Updates:</strong> Improved database and table management functions with better error handling.</li>
+            <li><strong>Time Management:</strong> Added functions to get process time, thread time, and monotonic time.</li>
+        </ul>
     </div>
 
     <div class="footer">
