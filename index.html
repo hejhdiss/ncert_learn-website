@@ -1,0 +1,3850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ncert_learn Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container my-4">
+        <header class="text-center mb-5">
+            <h1>ncert_learn Documentation</h1>
+            <p class="text-muted">Comprehensive guide to all functions in the <strong>ncert_learn</strong> Python module.</p>
+            <p><strong>Important Notice:</strong> While this documentation includes only the most useful functions for Class 12 CS students, the module includes additional features that will be documented later as more time becomes available. Below is an overview of the main features included in <code>ncert_learn</code>:</p>
+        </header>
+    
+        <!-- Module Overview -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Module: <code>ncert_learn</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Created By:</strong> Muhammed Shafin P.</p>
+                <p><strong>Overview:</strong> The <code>ncert_learn</code> module is a comprehensive Python package designed to support NCERT Class 12 Computer Science students. It offers a wide range of utility functions across various topics, including Python programming, MySQL database interactions, mathematical operations, data structures, network security, and more.</p>
+                <p><strong>Platform Recommendation:</strong> This module has a wide range of functionalities, but it is <strong>optimized for Windows</strong> to ensure all features work properly and efficiently. While it is possible to use the module on other operating systems, for the full experience and to ensure optimal performance, we recommend using <strong>Windows</strong>.</p>
+            </div>
+        </div>
+    
+        <!-- Key Features Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Key Features</h2>
+            </div>
+            <div class="card-body">
+                <h5>Mathematical Functions</h5>
+                <ul>
+                    <li>Prime number check: Check if a number is prime.</li>
+                    <li>Armstrong, Strong, Niven, and Palindrome checks: Check for various types of numbers.</li>
+                    <li>Fibonacci numbers, even/odd checks: Compute Fibonacci series, check even/odd.</li>
+                    <li>Advanced functions: GCD, LCM, prime factorization, modular exponentiation, fast Fourier transform.</li>
+                    <li>New Advanced Functions: adv_gcd, adv_lcm, adv_prime_factors, adv_is_prime.</li>
+                </ul>
+    
+                <h5>Trigonometric Functions</h5>
+                <ul>
+                    <li>Sine, Cosine, Tangent: Computes trigonometric values.</li>
+                    <li>Inverse Sine, Cosine, Tangent: Computes inverse trigonometric values.</li>
+                </ul>
+    
+                <h5>Geometric Calculations</h5>
+                <ul>
+                    <li>Area and volume for various shapes like circles, rectangles, triangles, spheres, and cylinders.</li>
+                </ul>
+    
+                <h5>Advanced Mathematical Functions</h5>
+                <ul>
+                    <li>Cube root, nth root, exponential, modular inverse, absolute value, rounding, ceiling, flooring.</li>
+                </ul>
+    
+                <h5>Number Theory Functions</h5>
+                <ul>
+                    <li>Prime Factors, Fibonacci, Perfect Numbers, Palindrome, Sum of Divisors, Abundant Numbers, Deficient Numbers, Triangular Numbers, Square Numbers, and more.</li>
+                </ul>
+    
+                <h5>Data Structures</h5>
+                <ul>
+                    <li>Stack Operations: Push, pop, peek, and display.</li>
+                    <li>Sorting Algorithms: Bubble Sort, Insertion Sort.</li>
+                </ul>
+    
+                <h5>MySQL Operations</h5>
+                <ul>
+                    <li>Manage databases and tables.</li>
+                    <li>Execute queries with optimized database management (mysql_execute_advanced_mode).</li>
+                </ul>
+    
+                <h5>File Handling</h5>
+                <ul>
+                    <li>Text, binary, and CSV file management.</li>
+                    <li>ZIP file operations: Compress, extract, list contents.</li>
+                </ul>
+    
+                <h5>System Utilities</h5>
+                <ul>
+                    <li>Fetch system information, manage services like XAMPP MySQL/Apache.</li>
+                </ul>
+    
+                <h5>Numerical Functions</h5>
+                <ul>
+                    <li>Mathematical operations: numerical_add, numerical_subtract, numerical_multiply, numerical_divide.</li>
+                    <li>Advanced numerical computations: numerical_zeros, numerical_ones, numerical_reshape, numerical_dot, numerical_inv, numerical_det, numerical_svd.</li>
+                    <li>Statistical functions: numerical_mean, numerical_median, numerical_variance, numerical_std.</li>
+                </ul>
+    
+                <h5>Cryptographic Functions</h5>
+                <ul>
+                    <li>Encoding/Decoding: Base64, Hex, Caesar cipher, and more.</li>
+                    <li>Advanced encoding methods like Base58, URL encoding, Huffman encoding, etc.</li>
+                </ul>
+    
+                <h5>Machine Learning Functions</h5>
+                <ul>
+                    <li>Preprocessing: Handle missing values, normalize, standardize data.</li>
+                    <li>Create and evaluate models: Linear regression, decision trees, random forests.</li>
+                    <li>Metrics: Accuracy, mean squared error.</li>
+                    <li>Visualization: Feature importance, decision boundaries.</li>
+                </ul>
+    
+                <h5>API Functions</h5>
+                <ul>
+                    <li>CRUD operations for item management: api_create_item, api_read_item, api_update_item, api_delete_item.</li>
+                    <li>User management: api_create_user, api_authenticate_user, api_upload_file, api_bulk_insert_items.</li>
+                </ul>
+    
+                <h5>Search Algorithms</h5>
+                <ul>
+                    <li>Binary Search, Linear Search, Jump Search, Exponential Search, Ternary Search, Interpolation Search.</li>
+                </ul>
+    
+                <h5>Code Quality Tools</h5>
+                <ul>
+                    <li>Format and lint Python code: format_code, lint_code, check_code_quality.</li>
+                </ul>
+    
+                <h5>Set Operations</h5>
+                <ul>
+                    <li>set_create, set_add, set_remove, set_discard, set_is_member, set_size, set_clear.</li>
+                </ul>
+    
+                <h5>Queue Operations</h5>
+                <ul>
+                    <li>queue_create, queue_enqueue, queue_dequeue, queue_peek, queue_is_empty, queue_size, queue_clear.</li>
+                </ul>
+    
+                <h5>Dictionary Operations</h5>
+                <ul>
+                    <li>dict_create, dict_add, dict_get, dict_remove, dict_key_exists, dict_get_keys, dict_get_values, dict_size, dict_clear.</li>
+                </ul>
+    
+                <h5>Tree Operations</h5>
+                <ul>
+                    <li>tree_insert, tree_inorder, tree_search, tree_minimum, tree_maximum, tree_size, tree_height, tree_level_order, tree_postorder, tree_preorder, tree_breadth_first, tree_depth_first, tree_delete.</li>
+                </ul>
+    
+                <h5>Variety Types of Trees</h5>
+                <ul>
+                    <li>Classes: QuadTreeNode, TrieNode, SegmentTree, OctreeNode, Heap, RBTreeNode, BSTNode, AVLNode, BTreeNode.</li>
+                    <li>Functions: bst_insert, bst_search, bst_inorder, avl_insert, avl_get_height, avl_get_balance, avl_left_rotate, avl_right_rotate, rb_insert, rb_insert_fixup, rb_left_rotate, rb_right_rotate, btree_insert, btree_insert_non_full, btree_split, trie_insert.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Version Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Version [5.3.1] - 2024-11-23</h2>
+            </div>
+            <div class="card-body">
+                <h5>Added</h5>
+                <ul>
+                    <li>Monero Mining Support: New functions for Monero mining, including pool setup, miner monitoring, and profitability calculations. Optimized for both CPU and GPU mining.</li>
+                    <li>Functionality updates for mining and pool management.</li>
+                    <li><strong>Cryptography:</strong> A wide range of cryptographic functions, including encoding and decoding methods, advanced encryption techniques, and more for secure data handling.</li>
+                    <li><strong>Get Info:</strong> Functions like <code>get_ip_details</code> and <code>get_phone_number_details</code> for fetching IP geolocation data and phone number details, respectively.</li>
+
+                </ul>
+    
+                <h5>Why Monero?</h5>
+                <p>Monero was selected for its privacy, decentralization, hardware compatibility, and efficiency in mining, making it an ideal choice for this educational module.</p>
+    
+                <h5>Fixed</h5>
+                <ul>
+                    <li>Bug fixes for automatic starting of miner on module import.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Installation Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Installation and Upgrade: <code>ncert_learn</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Installation:</strong> To install the latest version of <code>ncert_learn</code>, you can use pip by running the following command in your terminal:</p>
+                <pre><code>pip install ncert_learn</code></pre>
+                <p>Alternatively, to install manually, clone the repository and run the following commands:</p>
+                <pre><code>git clone https://github.com/hejhdiss/ncert_learn.git</code></pre>
+                <pre><code>cd ncert_learn</code></pre>
+                <pre><code>python setup.py install</code></pre>
+        
+                <p><strong>Upgrade:</strong> To upgrade to the latest version, use the following pip command:</p>
+                <pre><code>pip install --upgrade ncert_learn</code></pre>
+            </div>
+        </div>
+        
+    
+        <!-- Disclaimer Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Disclaimer</h2>
+            </div>
+            <div class="card-body">
+                <p>All the functionalities within <code>ncert_learn</code> are educational tools designed for learning purposes. Some tools require specific hardware and configurations to work efficiently, such as GPU mining or database management tools. Please read all instructions before using any features.</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">6K+ Downloads in 14 Days 🚀</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>We're excited to share that `ncert_learn` has surpassed **6,000 downloads** in just **14 days**! 🌟 This milestone reflects the growing popularity and trust in our module for Class 12 students and Python developers alike.</strong></p>
+                <p>With its powerful features in fields like **data structures**, **cryptography**, and now **Monero mining**, this achievement is a testament to the effectiveness and relevance of `ncert_learn` in helping students and professionals build their skills and projects.</p>
+                <p>Thank you to everyone who has downloaded and supported the module. The journey is just beginning—stay tuned for even more exciting updates! 🚀</p>
+            </div>
+        </div>
+        
+    
+
+<!-- Features Section -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">About Network Security & Utilities</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Network Security & Utilities</strong>: This module includes functionalities for SQL injection testing, network scanning, and local service management. It integrates tools such as <strong>sqlmap</strong>, <strong>nmap</strong>, and <strong>XAMPP</strong> to help users perform security-related tasks and manage services effectively.</p>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Module Main Features For Students:</h2>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li><strong>Mathematical Functions:</strong> Prime checks, GCD, LCM, Fibonacci, and advanced functions like modular exponentiation and fast Fourier transforms.</li>
+            <li><strong>Data Structures:</strong> Stack operations, list manipulations, and sorting algorithms like Bubble Sort and Insertion Sort.</li>
+            <li><strong>MySQL Operations:</strong> Database management, query execution, and advanced features like `mysql_execute_advanced_mode`.</li>
+            <li><strong>File Handling:</strong> Operations on text, CSV, binary files, directory management, and ZIP file extraction.</li>
+            <li><strong>System Utilities:</strong> Fetch system info like OS, processor, and network connectivity.</li>
+            <li><strong>Package Management:</strong> Bulk Python library installations.</li>
+            <li><strong>Cryptographic Functions:</strong> Encoding/decoding methods like Base64, Hex, URL, and advanced encryption techniques.</li>
+            <li><strong>Data Structures:</strong> Includes operations for stack, queue, tree, set, and dictionary.</li>
+
+        </ul>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Monero Mining with XMRig:</h2>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li><strong>Mining Software:</strong> XMRig is the mining software used to mine Monero (XMR). It supports both CPU and GPU mining.</li>
+            <li><strong>Mining Configuration:</strong> You can configure your mining setup with custom wallet addresses, mining pool URLs, and CPU thread count for optimal performance.</li>
+            <li><strong>Benchmarking:</strong> XMRig allows you to benchmark your mining hardware to evaluate performance before starting the mining process.</li>
+            <li><strong>Security:</strong> Wallet addresses used in the mining process are securely encrypted for added protection during the setup and mining process.</li>
+            <li><strong>Monitoring:</strong> Mining progress is continuously monitored, with options to adjust settings, such as wallet address, pool, or thread count.</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">NCERT Module Updates</h2>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li><strong>Email Communication:</strong> Sent a formal email to NCERT requesting permission to host Class 12 and Class 11 textbooks, notes, and include a 'Doubt Session' feature.</li>
+            <li><strong>Copyright Discussions:</strong> Addressed potential copyright issues and requested approval to legally host NCERT materials within the module.</li>
+            <li><strong>Action Plan:</strong> Once permission is granted, will immediately integrate the feature to provide a working solution for textbook access and related functionalities.</li>
+            <li><strong>Future Features:</strong> Plans to expand the module with student-centric tools like:
+                <ul>
+                    <li>Interactive Q&A sessions for clearing doubts.</li>
+                    <li>Class-specific notes integration for both 11th and 12th grades.</li>
+                    <li>Secure, user-friendly hosting of NCERT textbooks within the local environment.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Tested and Built Information -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Tested Platforms and Python Versions</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Tested Platforms:</strong></p>
+        <ul>
+            <li>Windows 11</li>
+        </ul>
+        <p><strong>Tested Python Versions:</strong></p>
+        <ul>
+            <li>Python 3.12.7</li>
+        </ul>
+        <p><strong>Build Information:</strong></p>
+        <ul>
+            <li>Developed and built on a system running <strong>Windows 11 Pro for Workstations</strong> (Version: 24H2, OS Build: 26100.2454).</li>
+            <li>Utilized <strong>Python 3.12.7</strong> with a 64-bit architecture for development and testing.</li>
+            <li>Hardware Specifications:
+                <ul>
+                    <li>Processor: 12th Gen Intel Core i5-12450HX CPU (2.40 GHz)</li>
+                    <li>RAM: 16 GB (15.7 GB usable)</li>
+                    <li>GPU: NVIDIA GeForce RTX 3050</li>
+                </ul>
+            </li>
+            <li>Primary IDEs: <strong>Visual Studio Code</strong> and <strong>JetBrains Fleet</strong>.</li>
+        </ul>
+        <p>The <code>ncert_learn</code> module has been rigorously built and tested on the above platforms and Python versions to ensure compatibility and reliability.</p>
+    </div>
+</div>
+
+
+
+<!-- Future Updates -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Future Updates</h2>
+    </div>
+    <div class="card-body">
+        <p>The <code>ncert_learn</code> module will continue to be updated with new features and improvements as time allows. The documentation for additional functions will be added in the future.</p>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Contributions</h2>
+    </div>
+    <div class="card-body">
+        <p>We welcome contributions to the project. Please fork the repository, create a feature branch, and submit a pull request for review. For any issues or suggestions, feel free to open an issue on the <a href="https://github.com/hejhdiss/ncert_learn">GitHub repository</a>.</p>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Acknowledgments</h2>
+    </div>
+    <div class="card-body">
+        <p>A big thank you to the contributors and the community for their support in making this release possible. Special thanks to those who helped with Monero mining features.</p>
+        <p>For more information, visit the GitHub repository : <a href="https://github.com/hejhdiss/ncert_learn">GitHub Repository</a>.</p>
+        <p>You can also find <strong>ncert_learn</strong> on <a href="https://pypi.org/project/ncert-learn/">PyPI</a>.</p>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>sqlmap_scan(url, **kwargs)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Executes the SQLmap scan command to test a URL for SQL injection vulnerabilities with additional parameters.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>url</code>: <em>str</em> - The URL to scan for SQL injection vulnerabilities.</li>
+            <li><code>kwargs</code>: <em>dict</em> - Additional SQLmap options passed as key-value pairs (e.g., `--cookie`, `--proxy`).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em> - Logs the result of the scan.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import sqlmap_scan
+
+sqlmap_scan("http://example.com", --cookie="name=value", --level=5)
+</code></pre>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>nmap_scan(target, arguments)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Executes a basic Nmap scan on a target with the specified arguments to identify open ports and services.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>target</code>: <em>str</em> - The target IP address or hostname to scan.</li>
+            <li><code>arguments</code>: <em>str</em> - The Nmap command-line arguments for the scan (e.g., `-p 80,443` for scanning ports 80 and 443).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em> - Logs the scan results including host, protocol, and open ports.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import nmap_scan
+
+nmap_scan("192.168.1.1", "-p 22,80")
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>get_ip_details(ip_address)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Fetches details about an IP address such as location, region, and more, by querying an IP geolocation service.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>ip_address</code>: <em>str</em> - The IP address for which details are to be fetched.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - A dictionary containing IP details (e.g., city, region, country), or an error message if fetching fails.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import get_ip_details
+
+ip_info = get_ip_details("8.8.8.8")
+print(ip_info)
+</code></pre>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>get_phone_number_details(phone_number)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Fetches details about a phone number including its country, carrier, and validity.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>phone_number</code>: <em>str</em> - The phone number to be analyzed, including the country code.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - A dictionary containing the country, carrier, and validity of the phone number, or an error message if the number is invalid.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import get_phone_number_details
+
+phone_info = get_phone_number_details("+14155552671")
+print(phone_info)
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>extract_text_from_pdf(pdf_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Extracts text from a PDF file at the specified path.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>pdf_path</code>: <em>str</em> - The path to the PDF file from which text is to be extracted.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The extracted text from the PDF file.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import extract_text_from_pdf
+
+pdf_text = extract_text_from_pdf("document.pdf")
+print(pdf_text)
+</code></pre>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>save_text_to_file(text, output_file)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Saves the provided text to a text file with UTF-8 encoding at the specified location.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>text</code>: <em>str</em> - The text to be saved to the file.</li>
+            <li><code>output_file</code>: <em>str</em> - The path to the text file where the text will be saved.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em> - The function writes the text to the output file and does not return any value.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import save_text_to_file
+
+text_to_save = "Extracted text from PDF"
+save_text_to_file(text_to_save, "output.txt")
+</code></pre>
+    </div>
+</div>
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>get_mining_pool_info_monero()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Prints information about popular Monero mining pools, including pool names and ports.</p>
+        <p><strong>Returns:</strong> <em>None</em> - This function prints details of Monero mining pools to the console.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import get_mining_pool_info_monero
+
+get_mining_pool_info_monero()
+</code></pre>
+        <p><strong>Output Example:</strong></p>
+        <pre class="bg-light p-3"><code>Monero Mining Pools and Ports:
+MineXMR:
+  URL: rx.unmineable.com
+  Ports: 3333, 443
+----------------------------------------
+SupportXMR:
+  URL: pool.supportxmr.com
+  Ports: 3333, 443
+----------------------------------------
+F2Pool:
+  URL: monero.f2pool.com
+  Ports: 13531, 13532
+----------------------------------------
+MoneroOcean:
+  URL: pool.moneroocean.stream
+  Ports: 10128, 10129
+----------------------------------------
+NanoPool:
+  URL: xmr-eu1.nanopool.org
+  Ports: 14444, 14443
+----------------------------------------
+XMRigPool:
+  URL: xmrpool.eu
+  Ports: 3333, 443
+----------------------------------------
+Poolin:
+  URL: xmr.poolin.com
+  Ports: 8888, 443
+----------------------------------------</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>calculate_profitability_monero(hashrate, power_cost, power_consumption)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates profitability based on hashrate and power costs for Monero mining.</p>
+        <p><strong>Args:</strong></p>
+        <ul>
+            <li><code>hashrate</code>: <em>float</em> - Mining hashrate in H/s.</li>
+            <li><code>power_cost</code>: <em>float</em> - Electricity cost per kWh.</li>
+            <li><code>power_consumption</code>: <em>float</em> - Power consumption in watts.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - Estimated profitability in USD per day.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import calculate_profitability_monero
+
+# Example values for hashrate (H/s), power cost ($/kWh), and power consumption (W)
+profitability = calculate_profitability_monero(500000, 0.12, 100)
+print(f'Profitability: {profitability} USD/day')
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mine_monero()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Initiates Monero mining by collecting user inputs for wallet address, pool URL, and CPU threads, then starts and monitors the mining process.</p>
+        <p><strong>Returns:</strong> <em>None</em> - Starts the mining process and monitors the output from the mining process.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mine_monero
+
+# Start Monero mining by collecting user input
+mine_monero()
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mine_monero_wallet_saved()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Initiates Monero mining by collecting user inputs for wallet address, mining pool URL, and CPU threads. It saves the wallet address in an encrypted format and allows the user to change it during the mining process. The miner is then started, and its output is monitored.</p>
+        <p><strong>Returns:</strong> <em>None</em> - Starts and monitors the mining process, with an option to change the wallet address during the mining process.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mine_monero_wallet_saved
+
+# Start Monero mining with a saved wallet address
+mine_monero_wallet_saved()
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mine_monero_advanced_mode()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Initiates Monero mining in advanced mode by setting up a miner with encrypted wallet address, pool URL, and thread count. The configuration is saved securely in a file ('miningdata') for future use. Users can choose to change wallet address, pool URL, and thread count during the process.</p>
+        <p><strong>Returns:</strong> <em>None</em> - Starts and monitors the mining process in advanced mode, with the option to save or modify the mining configuration.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mine_monero_advanced_mode
+
+# Start advanced mode Monero mining with saved configuration
+mine_monero_advanced_mode()
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mine_monero_cuda()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Initiates Monero mining by setting up a miner and monitoring its output. The function collects user inputs for the Monero wallet address, mining pool URL, and the number of CPU threads to use. It then starts the mining process using these inputs and monitors the output from the mining process. If an error occurs during monitoring, it terminates the miner process.</p>
+        <p><strong>Returns:</strong> <em>None</em> - Starts and monitors the mining process using GPU with CUDA, terminating on error.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mine_monero_cuda
+
+# Start Monero mining using GPU with CUDA
+mine_monero_cuda()
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mine_monero_opencl()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Initiates Monero mining by setting up a miner and monitoring its output. The function collects user inputs for the Monero wallet address, mining pool URL, and the number of CPU threads to use. It then starts the mining process using these inputs and monitors the output from the mining process. If an error occurs during monitoring, it terminates the miner process.</p>
+        <p><strong>Returns:</strong> <em>None</em> - Starts and monitors the mining process using OpenCL, terminating on error.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mine_monero_opencl
+
+# Start Monero mining using OpenCL
+mine_monero_opencl()
+</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>xmrig_benchmark()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Runs XMRig in benchmark mode using the specified executable and captures the output. This function benchmarks the mining algorithm (default is "rx/0" for RandomX) and threads, returning benchmark results such as hashrate and details.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><strong>algorithm:</strong> The algorithm to benchmark (default is "rx/0").</li>
+            <li><strong>threads:</strong> The number of CPU threads to use for benchmarking (default is 1).</li>
+        </ul>
+        <p><strong>Returns:</strong> A dictionary containing benchmark results such as hashrate and details.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import xmrig_benchmark
+
+# Run XMRig benchmark with default settings
+result = xmrig_benchmark()
+print(result)</code></pre>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>install_and_setup_nmap()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Handles the installation of Nmap while ensuring administrator privileges are met. <strong>Note:</strong> This function is designed for Windows operating systems only.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><em>None</em></li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Steps Performed:</strong></p>
+        <ul>
+            <li>Checks if the script is running with administrator privileges.</li>
+            <li>If not, requests admin privileges to re-run the script.</li>
+            <li>Downloads the Nmap installer if not already available.</li>
+            <li>Installs Nmap using the downloaded installer.</li>
+            <li>Deletes the installer after successful installation.</li>
+        </ul>
+        <p><strong>Platform:</strong> Windows</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import install_and_setup_nmap
+
+# Install and set up Nmap (Windows only)
+install_and_setup_nmap()
+</code></pre>
+    </div>
+</div>
+
+
+<!-- Function 1: areaofcircle -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>areaofcircle(radius)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates the area of a circle given its radius.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>radius</code>: <em>float</em> - The radius of the circle.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - The area of the circle.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import areaofcircle
+
+area = areaofcircle(5)
+print(f'Area of circle: {area}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2: areaoftriangle -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>areaoftriangle(base, height)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates the area of a triangle given its base and height.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>base</code>: <em>float</em> - The base length of the triangle.</li>
+            <li><code>height</code>: <em>float</em> - The height of the triangle.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - The area of the triangle.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import areaoftriangle
+
+area = areaoftriangle(10, 5)
+print(f'Area of triangle: {area}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3: areaofsquare -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>areaofsquare(side)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates the area of a square given the length of its side.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>side</code>: <em>float</em> - The length of the side of the square.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - The area of the square.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import areaofsquare
+
+area = areaofsquare(4)
+print(f'Area of square: {area}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4: areaofrectangle -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>areaofrectangle(length, width)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates the area of a rectangle given its length and width.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>length</code>: <em>float</em> - The length of the rectangle.</li>
+            <li><code>width</code>: <em>float</em> - The width of the rectangle.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - The area of the rectangle.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import areaofrectangle
+
+area = areaofrectangle(5, 10)
+print(f'Area of rectangle: {area}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5: areaofpolygon -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>areaofpolygon(noofsides, lengthofeachside)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Calculates the area of a polygon given its number of sides and the length of its side.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>noofsides</code>: <em>int</em> - The number of sides of the polygon.</li>
+            <li><code>lengthofeachside</code>: <em>float</em> - The length of each side of the polygon.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float or str</em> - The area of the polygon, or <code>False</code> if the number of sides is less than 3.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import areaofpolygon
+
+area = areaofpolygon(6, 5)
+print(f'Area of polygon: {area}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6: isbinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>isbinaryfile(file_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if a file is a binary file.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>file_path</code>: <em>str</em> - Path to the file.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the file is binary, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import isbinaryfile
+
+is_binary = isbinaryfile('file.bin')
+print(f'Is binary: {is_binary}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1: copybinaryfromonetoanother -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>copybinaryfromonetoanother(src, dest)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Copies the binary content from the file given by path <code>src</code> to the file given by path <code>dest</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>src</code>: <em>str</em> - The path of the file to copy from.</li>
+            <li><code>dest</code>: <em>str</em> - The path of the file to copy to.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the copy operation is successful, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import copybinaryfromonetoanother
+
+result = copybinaryfromonetoanother('source.bin', 'destination.bin')
+print(f'Copy successful: {result}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2: openbinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>openbinaryfile(file_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Opens the binary file given by path <code>file_path</code> to set it as the current working file.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>file_path</code>: <em>str</em> - The path of the file to open.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the file is opened successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import openbinaryfile
+
+result = openbinaryfile('file.bin')
+print(f'File opened: {result}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3: addtextobinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>addtextobinaryfile(byte_data)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Appends a sequence of bytes to the binary file opened by <code>openbinaryfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>byte_data</code>: <em>bytes</em> - A sequence of bytes to append.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the bytes are appended successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import addtextobinaryfile
+
+result = addtextobinaryfile(b'Hello, world!')
+print(f'Bytes appended: {result}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4: readbinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readbinaryfile()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads the contents of the binary file opened by <code>openbinaryfile()</code> function.</p>
+        <p><strong>Returns:</strong> <em>bytes</em> - The contents of the file as bytes.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readbinaryfile
+
+data = readbinaryfile()
+print(f'File content: {data}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5: clearbinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>clearbinaryfile()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears the contents of the binary file opened by <code>openbinaryfile()</code> function.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import clearbinaryfile
+
+clearbinaryfile()
+print('File contents cleared.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6: readbinaryspecificchunk -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readbinaryspecificchunk(offset, size)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads a specific chunk from the binary file opened by <code>openbinaryfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>offset</code>: <em>int</em> - The starting position to read from the file.</li>
+            <li><code>size</code>: <em>int</em> - The number of bytes to read.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bytes</em> - The content of the specified chunk as bytes if successful, <em>False</em> if any error occurs.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readbinaryspecificchunk
+
+chunk = readbinaryspecificchunk(0, 10)
+print(f'Chunk data: {chunk}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 7: overwritebinaryfile -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>overwritebinaryfile(new_data)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Overwrites the contents of the binary file opened by <code>openbinaryfile()</code> with new data.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>new_data</code>: <em>bytes</em> - The new content to write to the binary file.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the file is overwritten successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import overwritebinaryfile
+
+result = overwritebinaryfile(b'New binary content')
+print(f'File overwritten: {result}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 8: binary_file_operations_advanced_mode -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>binary_file_operations_advanced_mode(folder_path, operation, file_name=None, new_name=None, data=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Perform various binary file operations in a specified folder, such as create, write, append, read, clear, delete, rename, or list files.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>folder_path</code>: <em>str</em> - Path to the folder where the operations will be performed.</li>
+            <li><code>operation</code>: <em>str</em> - The operation to perform. Supported operations: 'create', 'write', 'append', 'read', 'clear', 'delete', 'rename', 'list_files'.</li>
+            <li><code>file_name</code>: <em>str</em> - The file name for the operation (optional).</li>
+            <li><code>new_name</code>: <em>str</em> - New name for the file (used in 'rename').</li>
+            <li><code>data</code>: <em>bytes</em> - Binary data for 'write' or 'append' operations (optional).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - For 'read': Returns file content (bytes) or False on error. For 'list_files': Returns a list of files in the folder or False on error. For other operations: Returns True if successful, False if failed.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import binary_file_operations_advanced_mode
+
+binary_file_operations_advanced_mode('/path/to/folder', 'create', 'new_file.bin')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 9: closebinaryfile -->
+<!-- Function 1: integertobinary -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>integertobinary(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts an integer to binary format.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>int</em> - The integer to convert.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The binary representation of the integer if the input is an integer, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import integertobinary
+
+binary_representation = integertobinary(10)
+print(f'Binary representation: {binary_representation}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2: integertooctal -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>integertooctal(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts an integer to octal format.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>int</em> - The integer to convert.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The octal representation of the integer if the input is an integer, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import integertooctal
+
+octal_representation = integertooctal(10)
+print(f'Octal representation: {octal_representation}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3: integertohexadecimal -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>integertohexadecimal(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts an integer to hexadecimal format.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>int</em> - The integer to convert.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The hexadecimal representation of the integer if the input is an integer, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import integertohexadecimal
+
+hexadecimal_representation = integertohexadecimal(10)
+print(f'Hexadecimal representation: {hexadecimal_representation}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4: binarytointeger -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>binarytointeger(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts a binary number to an integer.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>int</em> - The binary number to convert.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The integer representation of the binary number if the input is an integer, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import binarytointeger
+
+integer_representation = binarytointeger(1010)
+print(f'Integer representation: {integer_representation}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>iscsvfile(file_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if a file is a CSV file.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>file_path</code>: <em>str</em> - The path to the file.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the file is a CSV file, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import iscsvfile
+
+is_csv = iscsvfile('file.csv')
+print(is_csv)  # Output: True or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>copycsvfromonetoanother(src, dest)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Copies the CSV content from the file given by path <code>src</code> to the file given by path <code>dest</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>src</code>: <em>str</em> - The path of the file to copy from.</li>
+            <li><code>dest</code>: <em>str</em> - The path of the file to copy to.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the copy operation is successful, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import copycsvfromonetoanother
+
+success = copycsvfromonetoanother('source.csv', 'destination.csv')
+print(success)  # Output: True or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>opencsvfile(file_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Opens the CSV file given by path <code>file_path</code> to set it as the current working file.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>file_path</code>: <em>str</em> - The path of the file to open.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the file is opened successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import opencsvfile
+
+success = opencsvfile('data.csv')
+print(success)  # Output: True or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>addrowtocsv(row_data)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Appends a row of data to the CSV file opened by <code>opencsvfile()</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>row_data</code>: <em>list</em> - A list of values representing a row to append.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the row is appended successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import addrowtocsv
+
+success = addrowtocsv(['value1', 'value2', 'value3'])
+print(success)  # Output: True or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readcsvfile()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads the contents of the CSV file opened by <code>opencsvfile()</code>.</p>
+        <p><strong>Returns:</strong> <em>list</em> - A list of rows, where each row is a list of column values.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readcsvfile
+
+rows = readcsvfile()
+print(rows)  # Output: List of rows in the CSV file</code></pre>
+    </div>
+</div>
+
+<!-- Function 6 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>clearcsvfile()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears the contents of the CSV file opened by <code>opencsvfile()</code>.</p>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import clearcsvfile
+
+clearcsvfile()
+print('CSV file cleared.')  # No return value</code></pre>
+    </div>
+</div>
+
+<!-- Function 7 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readcsvspecificline(line_number)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads a specific line from the CSV file opened by <code>opencsvfile()</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>line_number</code>: <em>int</em> - The line number to read from the file (1-based index).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The content of the specified line as a list if successful, <em>False</em> if the line number is out of range or an error occurs.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readcsvspecificline
+
+line = readcsvspecificline(2)
+print(line)  # Output: List of values from line 2 or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 8 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>overwritecsvfile(rows)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Overwrites the contents of the CSV file opened by <code>opencsvfile()</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>rows</code>: <em>list</em> - A list of rows, where each row is a list of column values.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the file is overwritten successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import overwritecsvfile
+
+success = overwritecsvfile([['value1', 'value2'], ['value3', 'value4']])
+print(success)  # Output: True or False</code></pre>
+    </div>
+</div>
+
+<!-- Function 9 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>csv_file_operations_advanced_mode(folder_path, operation, file_name=None, new_name=None, data=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Performs various CSV file operations in a specified folder. Supported operations: 'create', 'write', 'append', 'read', 'clear', 'delete', 'rename', 'list_files'.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>folder_path</code>: <em>str</em> - Path of the folder where the files are stored.</li>
+            <li><code>operation</code>: <em>str</em> - The operation to perform (e.g., 'create', 'write', etc.).</li>
+            <li><code>file_name</code>: <em>str</em> (optional) - The name of the CSV file to operate on.</li>
+            <li><code>new_name</code>: <em>str</em> (optional) - The new name for renaming.</li>
+            <li><code>data</code>: <em>list</em> (optional) - The data to write or append.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the operation is successful, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import csv_file_operations_advanced_mode
+
+csv_file_operations_advanced_mode('/path/to/folder', 'create', 'newfile.csv')
+csv_file_operations_advanced_mode('/path/to/folder', 'write', 'newfile.csv', data=[['column1', 'column2']])</code></pre>
+    </div>
+</div>
+<!-- Function 1: dict_add_key_value -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_add_key_value(d, key, value)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Adds a key-value pair to the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to which the key-value pair will be added.</li>
+            <li><code>key</code>: <em>str</em> - The key to be added.</li>
+            <li><code>value</code>: <em>any</em> - The value corresponding to the key.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - The updated dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_add_key_value
+
+my_dict = {'a': 1}
+dict_add_key_value(my_dict, 'b', 2)
+print(my_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 2: dict_remove_key -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_remove_key(d, key)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Removes a key-value pair from the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary from which the key-value pair will be removed.</li>
+            <li><code>key</code>: <em>str</em> - The key of the pair to be removed.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict or bool</em> - The updated dictionary or <code>False</code> if the key is not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_remove_key
+
+my_dict = {'a': 1, 'b': 2}
+dict_remove_key(my_dict, 'a')
+print(my_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 3: dict_get_value -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_get_value(d, key)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Retrieves the value associated with a key in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary from which the value will be retrieved.</li>
+            <li><code>key</code>: <em>str</em> - The key whose associated value is to be retrieved.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any</em> - The value associated with the key, or <code>None</code> if the key is not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_get_value
+
+my_dict = {'a': 1, 'b': 2}
+value = dict_get_value(my_dict, 'b')
+print(value)</code></pre>
+    </div>
+</div>
+
+<!-- Function 4: dict_update_value -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_update_value(d, key, value)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Updates the value of an existing key in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to be updated.</li>
+            <li><code>key</code>: <em>str</em> - The key whose value will be updated.</li>
+            <li><code>value</code>: <em>any</em> - The new value to associate with the key.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - The updated dictionary, or <code>False</code> if the key is not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_update_value
+
+my_dict = {'a': 1, 'b': 2}
+dict_update_value(my_dict, 'a', 10)
+print(my_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 5: dict_contains_key -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_contains_key(d, key)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the dictionary contains a specific key.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to check.</li>
+            <li><code>key</code>: <em>str</em> - The key to check for existence.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the key exists, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_contains_key
+
+my_dict = {'a': 1, 'b': 2}
+contains = dict_contains_key(my_dict, 'a')
+print(contains)</code></pre>
+    </div>
+</div>
+
+<!-- Function 6: dict_get_all_keys -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_get_all_keys(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a list of all keys in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to get keys from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list of all keys in the dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_get_all_keys
+
+my_dict = {'a': 1, 'b': 2}
+keys = dict_get_all_keys(my_dict)
+print(keys)</code></pre>
+    </div>
+</div>
+
+<!-- Function 7: dict_get_all_values -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_get_all_values(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a list of all values in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to get values from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list of all values in the dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_get_all_values
+
+my_dict = {'a': 1, 'b': 2}
+values = dict_get_all_values(my_dict)
+print(values)</code></pre>
+    </div>
+</div>
+
+<!-- Function 8: dict_clear -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_clear(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears all key-value pairs from the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to clear.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em> - The dictionary is modified in-place.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_clear
+
+my_dict = {'a': 1, 'b': 2}
+dict_clear(my_dict)
+print(my_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Repeat similarly for remaining functions -->
+<!-- Function 9: dict_copy -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_copy(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a shallow copy of the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to copy.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - A shallow copy of the dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_copy
+
+my_dict = {'a': 1, 'b': 2}
+copy_dict = dict_copy(my_dict)
+print(copy_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 10: dict_items -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_items(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a list of all key-value pairs as tuples.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to retrieve key-value pairs from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list of tuples where each tuple is a key-value pair.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_items
+
+my_dict = {'a': 1, 'b': 2}
+items = dict_items(my_dict)
+print(items)</code></pre>
+    </div>
+</div>
+
+<!-- Function 11: dict_pop_item -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_pop_item(d, key)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Removes and returns the value for a specified key.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to pop the item from.</li>
+            <li><code>key</code>: <em>str</em> - The key to remove from the dictionary.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any</em> - The value of the popped key, or <code>None</code> if the key is not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_pop_item
+
+my_dict = {'a': 1, 'b': 2}
+value = dict_pop_item(my_dict, 'a')
+print(value)</code></pre>
+    </div>
+</div>
+
+<!-- Function 12: dict_update -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_update(d, other_dict)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Updates the dictionary with another dictionary's key-value pairs.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to be updated.</li>
+            <li><code>other_dict</code>: <em>dict</em> - The dictionary whose key-value pairs will be added to <code>d</code>.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - The updated dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_update
+
+my_dict = {'a': 1, 'b': 2}
+other_dict = {'c': 3, 'd': 4}
+dict_update(my_dict, other_dict)
+print(my_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 13: dict_setdefault -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_setdefault(d, key, default=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the value of the key if it exists, otherwise inserts the key with the default value.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to operate on.</li>
+            <li><code>key</code>: <em>str</em> - The key to check.</li>
+            <li><code>default</code>: <em>any</em> - The value to insert if the key doesn't exist (default is <code>None</code>).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any</em> - The value of the key, or the default value if the key does not exist.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_setdefault
+
+my_dict = {'a': 1, 'b': 2}
+value = dict_setdefault(my_dict, 'c', 3)
+print(my_dict)
+print(value)</code></pre>
+    </div>
+</div>
+
+<!-- Function 14: dict_fromkeys -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_fromkeys(keys, value=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Creates a new dictionary with the specified keys and a default value.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>keys</code>: <em>list</em> - A list of keys for the new dictionary.</li>
+            <li><code>value</code>: <em>any</em> - The default value for each key (default is <code>None</code>).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict</em> - A new dictionary with the specified keys and values.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_fromkeys
+
+keys = ['a', 'b', 'c']
+new_dict = dict_fromkeys(keys, 0)
+print(new_dict)</code></pre>
+    </div>
+</div>
+
+<!-- Function 15: dict_get_key_with_max_value -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_get_key_with_max_value(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the key with the maximum value in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to search.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The key with the maximum value, or <code>None</code> if the dictionary is empty.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_get_key_with_max_value
+
+my_dict = {'a': 1, 'b': 5, 'c': 3}
+key = dict_get_key_with_max_value(my_dict)
+print(key)</code></pre>
+    </div>
+</div>
+
+<!-- Function 16: dict_get_key_with_min_value -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>dict_get_key_with_min_value(d)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the key with the minimum value in the dictionary.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>d</code>: <em>dict</em> - The dictionary to search.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The key with the minimum value, or <code>None</code> if the dictionary is empty.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import dict_get_key_with_min_value
+
+my_dict = {'a': 1, 'b': 5, 'c': 3}
+key = dict_get_key_with_min_value(my_dict)
+print(key)</code></pre>
+    </div>
+
+        <!-- Function 1 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>checkprime(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Determines if a number <code>a</code> is prime.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to check for primality.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>bool</em> - True if the number is prime, False otherwise.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import checkprime
+
+is_prime = checkprime(7)
+print(is_prime)  # True
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 2 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>factors(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Returns all the factors of a number <code>a</code>.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number for which factors are required.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>tuple</em> - A tuple of all the factors of the number.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import factors
+
+factors_of_number = factors(12)
+print(factors_of_number)  # (1, 2, 3, 4, 6, 12)
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 3 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>len_fibonacci(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Generates the first <code>a</code> Fibonacci numbers.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number of Fibonacci numbers to generate.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>tuple</em> - A tuple of the first <code>a</code> Fibonacci numbers.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import len_fibonacci
+
+fibonacci_series = len_fibonacci(10)
+print(fibonacci_series)  # (-1, 1, 0, 1, 1, 2, 3, 5, 8, 13)
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 4 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>checkarmstrong(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Checks if a number <code>a</code> is an Armstrong number.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to check.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>bool</em> - True if the number is an Armstrong number, False otherwise.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import checkarmstrong
+
+is_armstrong = checkarmstrong(153)
+print(is_armstrong)  # True
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 5 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>intreverse(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Reverses the digits of a number <code>a</code>.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to reverse.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>int</em> - The reversed number.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import intreverse
+
+reversed_number = intreverse(1234)
+print(reversed_number)  # 4321
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 6 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>checkpalindrome(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Checks if a number <code>a</code> is a palindrome.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to check.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>bool</em> - True if the number is a palindrome, False otherwise.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import checkpalindrome
+
+is_palindrome = checkpalindrome(121)
+print(is_palindrome)  # True
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 7 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>checkstrong(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Checks if a number <code>a</code> is a strong number.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to check.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>bool</em> - True if the number is a strong number, False otherwise.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import checkstrong
+
+is_strong = checkstrong(6)
+print(is_strong)  # True
+</code></pre>
+            </div>
+        </div>
+
+        <!-- Function 8 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="h4">Function: <code>checkniven(a)</code></h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Description:</strong> Checks if a number <code>a</code> is a Niven number.</p>
+                <p><strong>Parameters:</strong></p>
+                <ul>
+                    <li><code>a</code>: <em>int</em> - The number to check.</li>
+                </ul>
+                <p><strong>Returns:</strong> <em>bool</em> - True if the number is a Niven number, False otherwise.</p>
+                <p><strong>Example Usage:</strong></p>
+                <pre class="bg-light p-3"><code>from ncert_learn import checkniven
+
+is_niven = checkniven(18)
+print(is_niven)  # True
+</code></pre>
+
+            <!-- Function 1: prime -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>prime(z)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Determines all prime numbers up to a given number <code>z</code>.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>z</code>: <em>int</em> - The upper limit to check for prime numbers.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing all prime numbers up to <code>z</code>, or -1 if no prime numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import prime
+        
+        primes = prime(20)
+        print(f'Prime numbers up to 20: {primes}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 2: armstrong -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>armstrong(z)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Determines all Armstrong numbers up to a given number <code>z</code>.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>z</code>: <em>int</em> - The upper limit to check for Armstrong numbers.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing all Armstrong numbers up to <code>z</code>, or -1 if no Armstrong numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import armstrong
+        
+        armstrong_numbers = armstrong(1000)
+        print(f'Armstrong numbers up to 1000: {armstrong_numbers}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 3: strong -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>strong(z)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Determines all strong numbers up to a given number <code>z</code>.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>z</code>: <em>int</em> - The upper limit to check for strong numbers.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing all strong numbers up to <code>z</code>, or -1 if no strong numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import strong
+        
+        strong_numbers = strong(1000)
+        print(f'Strong numbers up to 1000: {strong_numbers}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 4: niven -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>niven(z)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Determines all Niven numbers up to a given number <code>z</code>.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>z</code>: <em>int</em> - The upper limit to check for Niven numbers.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing all Niven numbers up to <code>z</code>, or -1 if no Niven numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import niven
+        
+        niven_numbers = niven(1000)
+        print(f'Niven numbers up to 1000: {niven_numbers}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 5: palindrome -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>palindrome(z)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Finds all palindrome numbers up to a given number <code>z</code>.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>z</code>: <em>int</em> - The upper limit to find palindrome numbers.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing all palindrome numbers up to <code>z</code>, or -1 if no palindrome numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import palindrome
+        
+        palindromes = palindrome(1000)
+        print(f'Palindrome numbers up to 1000: {palindromes}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 6: len_prime -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>len_prime(yt)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Generates the first <code>yt</code> prime numbers.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>yt</code>: <em>int</em> - The number of prime numbers to generate.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing the first <code>yt</code> prime numbers, or -1 if no prime numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import len_prime
+        
+        primes = len_prime(10)
+        print(f'First 10 prime numbers: {primes}')
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 7: len_armstrong -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>len_armstrong(yt)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Generates the first <code>yt</code> Armstrong numbers.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>yt</code>: <em>int</em> - The number of Armstrong numbers to generate.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing the first <code>yt</code> Armstrong numbers, or -1 if no Armstrong numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import len_armstrong
+        
+        armstrong_numbers = len_armstrong(10)
+        print(f'First 10 Armstrong numbers: {armstrong_numbers}')
+        </code></pre>
+                </div>
+            </div>
+        </div>
+        
+        
+            <!-- Function 1 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>len_strong(yt)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Generates the first <code>yt</code> strong numbers. A strong number is a number that is equal to the sum of all its proper divisors.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>yt</code>: <em>int</em> - The number of strong numbers to generate.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing the first <code>yt</code> strong numbers, or -1 if no strong numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import len_strong
+        
+        strong_numbers = len_strong(5)
+        print(strong_numbers)
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 2 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>len_niven(yt)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Generates the first <code>yt</code> Niven numbers. A Niven number is a number that is divisible by the sum of its digits.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>yt</code>: <em>int</em> - The number of Niven numbers to generate.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing the first <code>yt</code> Niven numbers, or -1 if no Niven numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import len_niven
+        
+        niven_numbers = len_niven(5)
+        print(niven_numbers)
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 3 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>len_palindrome(yt)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Generates the first <code>yt</code> palindrome numbers. A palindrome is a number that reads the same backward as forward.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>yt</code>: <em>int</em> - The number of palindrome numbers to generate.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>tuple or int</em> - A tuple containing the first <code>yt</code> palindrome numbers, or -1 if no palindrome numbers are found.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import len_palindrome
+        
+        palindrome_numbers = len_palindrome(5)
+        print(palindrome_numbers)
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 4 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>checkeven(a)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Checks if a number is even.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>a</code>: <em>int</em> - The number to check.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the number is even, <code>False</code> otherwise.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import checkeven
+        
+        is_even = checkeven(4)
+        print(is_even)  # True
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 5 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>checkodd(a)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Checks if a number is odd.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>a</code>: <em>int</em> - The number to check.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the number is odd, <code>False</code> otherwise.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import checkodd
+        
+        is_odd = checkodd(5)
+        print(is_odd)  # True
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 6 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>checkzero(a)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Checks if a number is zero.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>a</code>: <em>int</em> - The number to check.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the number is zero, <code>False</code> otherwise.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import checkzero
+        
+        is_zero = checkzero(0)
+        print(is_zero)  # True
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 7 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>checknegative(a)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Checks if a number is negative.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>a</code>: <em>int</em> - The number to check.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the number is negative, <code>False</code> otherwise.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import checknegative
+        
+        is_negative = checknegative(-1)
+        print(is_negative)  # True
+        </code></pre>
+                </div>
+            </div>
+        
+            <!-- Function 8 -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4">Function: <code>checkpositive(a)</code></h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Description:</strong> Checks if a number is positive.</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li><code>a</code>: <em>int</em> - The number to check.</li>
+                    </ul>
+                    <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the number is positive, <code>False</code> otherwise.</p>
+                    <p><strong>Example Usage:</strong></p>
+                    <pre class="bg-light p-3"><code>from ncert_learn import checkpositive
+        
+        is_positive = checkpositive(2)
+        print(is_positive)  # True
+        </code></pre>
+                </div>
+            </div>
+        </div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_append_item(lst, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Appends an item to the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to which the item will be added.</li>
+            <li><code>item</code>: <em>any</em> - The item to append to the list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The updated list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_append_item
+
+lst = [1, 2, 3]
+updated_lst = list_append_item(lst, 4)
+print(updated_lst)  # [1, 2, 3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_remove_item(lst, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Removes the first occurrence of an item from the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list from which the item will be removed.</li>
+            <li><code>item</code>: <em>any</em> - The item to remove from the list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list or bool</em> - The updated list if the item was removed, or <code>False</code> if the item was not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_remove_item
+
+lst = [1, 2, 3]
+updated_lst = list_remove_item(lst, 2)
+print(updated_lst)  # [1, 3]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_insert_item(lst, index, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Inserts an item at a specified index in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to insert the item into.</li>
+            <li><code>index</code>: <em>int</em> - The index at which to insert the item.</li>
+            <li><code>item</code>: <em>any</em> - The item to insert into the list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The updated list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_insert_item
+
+lst = [1, 3, 4]
+updated_lst = list_insert_item(lst, 1, 2)
+print(updated_lst)  # [1, 2, 3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_pop_item(lst, index=-1)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Pops an item from the list at the specified index.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to pop the item from.</li>
+            <li><code>index</code>: <em>int, optional</em> - The index at which to pop the item (default is -1, which pops the last item).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any or bool</em> - The item that was popped, or <code>False</code> if the index is out of range.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_pop_item
+
+lst = [1, 2, 3]
+popped_item = list_pop_item(lst)
+print(popped_item)  # 3
+print(lst)  # [1, 2]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_find_index(lst, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Finds the index of the first occurrence of an item in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to search through.</li>
+            <li><code>item</code>: <em>any</em> - The item to search for.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The index of the first occurrence of the item, or -1 if the item is not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_find_index
+
+lst = [1, 2, 3, 4]
+index = list_find_index(lst, 3)
+print(index)  # 2
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_contains_item(lst, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the list contains a specific item.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to check.</li>
+            <li><code>item</code>: <em>any</em> - The item to check for.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the item is found in the list, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_contains_item
+
+lst = [1, 2, 3]
+contains = list_contains_item(lst, 2)
+print(contains)  # True
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 7 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_sort(lst, reverse=False)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Sorts the list in ascending or descending order.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to sort.</li>
+            <li><code>reverse</code>: <em>bool, optional</em> - Whether to sort in descending order (default is <code>False</code> for ascending order).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The sorted list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_sort
+
+lst = [3, 1, 2]
+sorted_lst = list_sort(lst, reverse=True)
+print(sorted_lst)  # [3, 2, 1]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 8 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_reverse(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reverses the order of the items in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to reverse.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The reversed list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_reverse
+
+lst = [1, 2, 3]
+reversed_lst = list_reverse(lst)
+print(reversed_lst)  # [3, 2, 1]
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_clear(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears all items from the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to be cleared.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The cleared list (empty).</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_clear
+
+lst = [1, 2, 3]
+updated_lst = list_clear(lst)
+print(updated_lst)  # []
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_copy(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a shallow copy of the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to copy.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A shallow copy of the list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_copy
+
+lst = [1, 2, 3]
+copied_lst = list_copy(lst)
+print(copied_lst)  # [1, 2, 3]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_extend(lst, other_lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Extends the list by appending elements from another list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to extend.</li>
+            <li><code>other_lst</code>: <em>list</em> - The list whose elements will be added to <code>lst</code>.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The extended list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_extend
+
+lst1 = [1, 2]
+lst2 = [3, 4]
+extended_lst = list_extend(lst1, lst2)
+print(extended_lst)  # [1, 2, 3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_count(lst, item)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Counts how many times an item appears in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to search.</li>
+            <li><code>item</code>: <em>any</em> - The item to count.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The number of times the item appears in the list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_count
+
+lst = [1, 2, 3, 2, 4]
+count = list_count(lst, 2)
+print(count)  # 2
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_min(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the minimum item from the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to find the minimum from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any</em> - The minimum item in the list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_min
+
+lst = [1, 2, 3, 4]
+min_item = list_min(lst)
+print(min_item)  # 1
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_max(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the maximum item from the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to find the maximum from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any</em> - The maximum item in the list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_max
+
+lst = [1, 2, 3, 4]
+max_item = list_max(lst)
+print(max_item)  # 4
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 7 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_sum(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the sum of all items in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to sum.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The sum of all items in the list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_sum
+
+lst = [1, 2, 3, 4]
+total = list_sum(lst)
+print(total)  # 10
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 8 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_mean(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the mean (average) of all items in the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to calculate the mean of.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>float</em> - The mean of all items in the list, or <code>None</code> if the list is empty.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_mean
+
+lst = [1, 2, 3, 4]
+mean = list_mean(lst)
+print(mean)  # 2.5
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 9 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_unique(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a list of unique items from the list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to extract unique items from.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list containing only unique items from the original list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_unique
+
+lst = [1, 2, 2, 3, 4]
+unique_lst = list_unique(lst)
+print(unique_lst)  # [1, 2, 3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 10 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_combine(lst1, lst2)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Combines two lists into one.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst1</code>: <em>list</em> - The first list.</li>
+            <li><code>lst2</code>: <em>list</em> - The second list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The combined list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_combine
+
+lst1 = [1, 2]
+lst2 = [3, 4]
+combined_lst = list_combine(lst1, lst2)
+print(combined_lst)  # [1, 2, 3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 11 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_difference(lst1, lst2)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the items in <code>lst1</code> that are not in <code>lst2</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst1</code>: <em>list</em> - The first list.</li>
+            <li><code>lst2</code>: <em>list</em> - The second list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The items in <code>lst1</code> that are not in <code>lst2</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_difference
+
+lst1 = [1, 2, 3, 4]
+lst2 = [3, 4, 5]
+difference_lst = list_difference(lst1, lst2)
+print(difference_lst)  # [1, 2]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 12 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_intersection(lst1, lst2)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the items that are common in both lists.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst1</code>: <em>list</em> - The first list.</li>
+            <li><code>lst2</code>: <em>list</em> - The second list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The items common to both lists.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_intersection
+
+lst1 = [1, 2, 3, 4]
+lst2 = [3, 4, 5]
+intersection_lst = list_intersection(lst1, lst2)
+print(intersection_lst)  # [3, 4]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 13 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>list_is_empty(lst)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the list is empty.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>lst</code>: <em>list</em> - The list to check.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the list is empty, otherwise <code>False</code>.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import list_is_empty
+
+lst = []
+is_empty = list_is_empty(lst)
+print(is_empty)  # True
+</code></pre>
+    </div>
+</div>
+ <!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlconnectwithdatabase(database, host='localhost', user='root', password='', port='3306')</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Connects to a MySQL database with the specified database name.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>database</code>: <em>str</em> - The name of the database to connect to.</li>
+            <li><code>host</code>: <em>str</em> (optional) - The hostname or IP address of the MySQL server. Defaults to 'localhost'.</li>
+            <li><code>user</code>: <em>str</em> (optional) - The MySQL username. Defaults to 'root'.</li>
+            <li><code>password</code>: <em>str</em> (optional) - The MySQL password. Defaults to an empty string.</li>
+            <li><code>port</code>: <em>str</em> (optional) - The port number of the MySQL server. Defaults to '3306'.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the connection was successful, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlconnectwithdatabase
+
+success = mysqlconnectwithdatabase('my_database')
+if success:
+    print('Connected successfully!')
+else:
+    print('Connection failed.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlconnect(host='localhost', user='root', password='', port='3306')</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Connects to a MySQL server without specifying a database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>host</code>: <em>str</em> (optional) - The hostname or IP address of the MySQL server. Defaults to 'localhost'.</li>
+            <li><code>user</code>: <em>str</em> (optional) - The MySQL username. Defaults to 'root'.</li>
+            <li><code>password</code>: <em>str</em> (optional) - The MySQL password. Defaults to an empty string.</li>
+            <li><code>port</code>: <em>str</em> (optional) - The port number of the MySQL server. Defaults to '3306'.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the connection was successful, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlconnect
+
+success = mysqlconnect()
+if success:
+    print('Connected to MySQL server.')
+else:
+    print('Connection failed.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlshowdatabases()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Shows all databases in the MySQL server.</p>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple of strings, where each string is a database name.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlshowdatabases
+
+databases = mysqlshowdatabases()
+if databases:
+    print(f'Databases: {databases}')
+else:
+    print('No databases found or not connected.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlcreatedatabase(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Creates a new database in the MySQL server with the specified name.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The name of the database to be created.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the database was created successfully, False if the connection to the database is not established.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlcreatedatabase
+
+success = mysqlcreatedatabase('new_database')
+if success:
+    print('Database created successfully!')
+else:
+    print('Failed to create database.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlshowtables()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a tuple of strings containing the names of all tables in the current database.</p>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple of strings, where each string is a table name.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlshowtables
+
+tables = mysqlshowtables()
+if tables:
+    print(f'Tables in the database: {tables}')
+else:
+    print('No tables found or not connected.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlshowtablesfromdatabase(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a tuple of strings containing the names of all tables in the specified database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The name of the database.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple of strings, where each string is a table name, or <em>False</em> if the database doesn't exist or not connected.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlshowtablesfromdatabase
+
+tables = mysqlshowtablesfromdatabase('my_database')
+if tables:
+    print(f'Tables in database: {tables}')
+else:
+    print('No tables found or invalid database.')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqldescribetable(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Describes the structure of a specified table in the current database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The name of the table to describe.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple containing the description of the table's columns, including field name, type, nullability, key information, default values, and extra information. Returns False if the connection to the database is not established or if the table does not exist.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqldescribetable
+
+table_description = mysqldescribetable('my_table')
+print(table_description)
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqldescribetablefromdatabase(b, a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Describes the structure of a specified table in a specified database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>b</code>: <em>str</em> - The name of the database.</li>
+            <li><code>a</code>: <em>str</em> - The name of the table to describe.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple containing the description of the table's columns, including field name, type, nullability, key information, default values, and extra information. Returns False if the connection to the database is not established or if the table does not exist.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqldescribetablefromdatabase
+
+table_description = mysqldescribetablefromdatabase('my_database', 'my_table')
+print(table_description)
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlfetchalltable(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Fetches all rows from a specified table in the current database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The name of the table.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple of tuples, where each inner tuple is a row in the table. Returns False if the connection to the database is not established or if the table does not exist.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlfetchalltable
+
+table_data = mysqlfetchalltable('my_table')
+print(table_data)
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlfetchalltablefromdatabase(b, a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Fetches all rows from a specified table in a specified database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>b</code>: <em>str</em> - The name of the database.</li>
+            <li><code>a</code>: <em>str</em> - The name of the table.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple</em> - A tuple of tuples, where each inner tuple is a row in the table.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlfetchalltablefromdatabase
+
+table_data = mysqlfetchalltablefromdatabase('my_database', 'my_table')
+print(table_data)
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlcreatetable(database, name, d, s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Creates a new table in the specified database with the specified name and structure.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>database</code>: <em>str</em> - The name of the database to create the table in.</li>
+            <li><code>name</code>: <em>str</em> - The name of the table to create.</li>
+            <li><code>d</code>: <em>tuple</em> - A tuple of strings, where each string is a field name.</li>
+            <li><code>s</code>: <em>tuple</em> - A tuple of strings, where each string is a data type. The length of this tuple should be equal to the length of <code>d</code>.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the table was created successfully, False if the connection to the database is not established or if the table already exists.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlcreatetable
+
+is_created = mysqlcreatetable('my_database', 'my_table', ('field1', 'field2'), ('VARCHAR(100)', 'INT'))
+print(f'Table created: {is_created}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqltableinsert(database, name, s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> This function is used to insert data into a table in a MySQL database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>database</code>: <em>str</em> - The name of the database to insert into.</li>
+            <li><code>name</code>: <em>str</em> - The name of the table to insert into.</li>
+            <li><code>s</code>: <em>tuple</em> - The data to insert into the table. The tuple should contain the data in the order of the columns in the table.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the data was inserted successfully, False otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqltableinsert
+
+success = mysqltableinsert('my_database', 'my_table', ('value1', 'value2', 3))
+print(f'Data inserted: {success}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlrowcounttablefromdatabase(b, a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the number of rows in a specified table from a specified database.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>b</code>: <em>str</em> - The name of the database.</li>
+            <li><code>a</code>: <em>str</em> - The name of the table.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The number of rows in the table if the database and table exist. <em>bool</em> - False if the database or table does not exist, or if the connection is not established.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlrowcounttablefromdatabase
+
+row_count = mysqlrowcounttablefromdatabase('my_database', 'my_table')
+print(f'Number of rows: {row_count}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysqlexecutequery(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Executes a specified SQL query.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The SQL query to execute.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - True if the query was executed successfully, False if the connection is not established, or if an error occurs.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysqlexecutequery
+
+success = mysqlexecutequery('SELECT * FROM my_table')
+print(f'Query executed successfully: {success}')
+</code></pre>
+    </div>
+</div>
+  <!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>mysql_execute_advanced_mode(operation, database=None, table=None, query=None, data=None, host='localhost', user='root', password='', port='3306')</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Generalized function to perform various MySQL operations like connect, create DB, show DBs, fetch rows, etc.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>operation</code>: <em>str</em> - The operation to perform. Can be 'connect', 'show_databases', 'create_database', 'show_tables', 'fetch_all', 'create_table', 'insert', 'count_rows', 'execute_query'.</li>
+            <li><code>database</code>: <em>str</em>, optional - The database name, required for operations like 'create_table', 'insert', etc.</li>
+            <li><code>table</code>: <em>str</em>, optional - The table name for operations like 'show_tables', 'fetch_all', 'insert', etc.</li>
+            <li><code>query</code>: <em>str</em>, optional - The SQL query for 'execute_query' operations.</li>
+            <li><code>data</code>: <em>tuple</em>, optional - The data to insert into a table (for 'insert' operations).</li>
+            <li><code>host</code>: <em>str</em>, optional - The hostname or IP address of the MySQL server. Defaults to 'localhost'.</li>
+            <li><code>user</code>: <em>str</em>, optional - The MySQL username. Defaults to 'root'.</li>
+            <li><code>password</code>: <em>str</em>, optional - The MySQL password. Defaults to an empty string ''.</li>
+            <li><code>port</code>: <em>str</em>, optional - The port number of the MySQL server. Defaults to '3306'.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>tuple or bool</em> - Returns the result of the operation or True/False depending on success or failure.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import mysql_execute_advanced_mode
+
+# Connect to the database
+connection_status = mysql_execute_advanced_mode('connect', host='localhost', user='root', password='your_password')
+print(f'Connection successful: {connection_status}')
+
+# Create a new database
+db_created = mysql_execute_advanced_mode('create_database', database='my_new_database')
+print(f'Database created: {db_created}')
+
+# Show all databases
+databases = mysql_execute_advanced_mode('show_databases')
+print(f'Available databases: {databases}')
+
+# Create a table
+table_created = mysql_execute_advanced_mode('create_table', database='my_new_database', table='my_table', data=(('id', 'INT PRIMARY KEY'), ('name', 'VARCHAR(100)')))
+print(f'Table created: {table_created}')
+
+# Insert data into the table
+data_inserted = mysql_execute_advanced_mode('insert', database='my_new_database', table='my_table', data=(1, 'John Doe'))
+print(f'Data inserted: {data_inserted}')
+
+# Count rows in the table
+row_count = mysql_execute_advanced_mode('count_rows', database='my_new_database', table='my_table')
+print(f'Number of rows: {row_count}')
+
+# Fetch all rows from the table
+rows = mysql_execute_advanced_mode('fetch_all', database='my_new_database', table='my_table')
+print(f'Fetched rows: {rows}')
+
+# Execute a custom query
+results = mysql_execute_advanced_mode('execute_query', query='SELECT * FROM my_table')
+print(f'Query results: {results}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>bubblesort(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Bubblesort Algorithm for sorting a list of numbers in ascending order. It takes a list of numbers as an argument and returns a sorted list in ascending order. If the argument is not a list, it returns False. If the list is empty, it returns an empty list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The list of numbers to be sorted.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The sorted list in ascending order.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import bubblesort
+
+sorted_list = bubblesort([5, 2, 9, 1, 5, 6])
+print(f'Sorted list: {sorted_list}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>insertionsort(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Insertion Sort Algorithm for sorting a list of numbers in ascending order. This function sorts a list of numbers using the insertion sort algorithm. If the input is not a list, it returns False. If the list is empty, it returns an empty list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The list of numbers to be sorted.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The sorted list in ascending order, or False if the input is not a list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import insertionsort
+
+sorted_list = insertionsort([5, 2, 9, 1, 5, 6])
+print(f'Sorted list: {sorted_list}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>createstackdict()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Creates a new empty stack represented as a dictionary.</p>
+        <p><strong>Returns:</strong> <em>dict</em> - An empty dictionary.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import createstackdict
+
+stack = createstackdict()
+print(f'Stack created: {stack}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>clearstackdict(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears the stack represented as a dictionary. This function does not return any value.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>dict</em> - The stack represented as a dictionary to be cleared.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import clearstackdict
+
+stack = {'a': 1, 'b': 2}
+clearstackdict(stack)
+print(f'Stack after clearing: {stack}')
+</code></pre>
+    </div>
+</div>
+  <!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>pushstackdict(a, b)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Pushes a dictionary onto the stack represented as another dictionary. This function does not return a value.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>dict</em> - The stack represented as a dictionary.</li>
+            <li><code>b</code>: <em>dict</em> - The dictionary to be pushed onto the stack.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import pushstackdict, createstackdict
+
+stack = createstackdict()
+pushstackdict(stack, {'a': 1})
+print(stack)  # Output: {'a': 1}
+pushstackdict(stack, {'b': 2})
+print(stack)  # Output: {'a': 1, 'b': 2}
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>popstackdict(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Removes and returns the last inserted key-value pair from the stack represented as a dictionary. If the stack is empty, it returns -1.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>dict</em> - The stack represented as a dictionary.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>dict or int</em> - The modified dictionary or -1 if the stack is empty.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import popstackdict
+
+stack = {'a': 1, 'b': 2}
+modified_stack = popstackdict(stack)
+print(modified_stack)  # Output: {'a': 1}
+empty_stack_result = popstackdict({})
+print(empty_stack_result)  # Output: -1
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>peekstackdict(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the value of the last inserted key in the stack represented as a dictionary without removing it. If the stack is empty, it returns -1.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>dict</em> - The stack represented as a dictionary.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>any or int</em> - The value of the last inserted key if the stack is not empty, otherwise -1.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import peekstackdict
+
+stack = {'a': 1, 'b': 2}
+last_value = peekstackdict(stack)
+print(last_value)  # Output: 2
+empty_peek = peekstackdict({})
+print(empty_peek)  # Output: -1
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>displaymodestackdict(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a list of the items in the stack represented as a dictionary where each item is a tuple of the key-value pair. The list is ordered with the most recently inserted key-value pair at the end of the list. If the stack is empty, it returns an empty list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>dict</em> - The stack represented as a dictionary.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list of tuples representing the key-value pairs in the stack.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import displaymodestackdict
+
+stack = {'a': 1, 'b': 2}
+items = displaymodestackdict(stack)
+print(items)  # Output: [('a', 1), ('b', 2)]
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>createstacklst()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Creates an empty stack implemented as a list.</p>
+        <p><strong>Returns:</strong> <em>list</em> - An empty list to be used as a stack.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import createstacklst
+
+stack = createstacklst()
+print(stack)  # Output: []
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>clearstacklst(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears the stack implemented as a list. This function does not return any value.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The stack implemented as a list to be cleared.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import clearstacklst
+
+stack = [1, 2, 3]
+clearstacklst(stack)
+print(stack)  # Output: []
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>pushstacklst(a, b)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Pushes an item onto the stack implemented as a list.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The stack implemented as a list.</li>
+            <li><code>b</code>: <em>object</em> - The item to be pushed onto the stack.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The modified stack implemented as a list.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import pushstacklst
+
+stack = []
+pushstacklst(stack, 1)
+print(stack)  # Output: [1]
+pushstacklst(stack, 2)
+print(stack)  # Output: [1, 2]
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>popstacklst(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Pops an item from the stack implemented as a list. If the stack is empty, -1 is returned. Otherwise, the popped item is returned and the stack is modified.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The stack implemented as a list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>object</em> - The popped item if the stack is not empty, -1 otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import popstacklst
+
+stack = [1, 2, 3]
+popped_item = popstacklst(stack)
+print(popped_item)  # Output: 3
+print(stack)  # Output: [1, 2]
+empty_pop = popstacklst([])
+print(empty_pop)  # Output: -1
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>peekstacklst(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns the top element from the stack implemented as a list without removing it. If the stack is empty, -1 is returned. Otherwise, the top element is returned.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The stack implemented as a list.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>object</em> - The top element if the stack is not empty, -1 otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import peekstacklst
+
+stack = [1, 2, 3]
+top_item = peekstacklst(stack)
+print(top_item)  # Output: 3
+empty_peek = peekstacklst([])
+print(empty_peek)  # Output: -1
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>displaymodestacklst(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Returns a modified version of the stack implemented as a list by reversing the order of its elements.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>list</em> - The stack implemented as a list to be modified.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - The modified stack implemented as a list with the order of its elements reversed.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import displaymodestacklst
+
+stack = [1, 2, 3]
+reversed_stack = displaymodestacklst(stack)
+print(reversed_stack)  # Output: [3, 2, 1]
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_reverse(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reverses the input string.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be reversed.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The reversed string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_reverse
+
+reversed_str = str_reverse('hello')
+print(f'Reversed string: {reversed_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_to_upper(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts the input string to uppercase.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be converted to uppercase.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The uppercase version of the input string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_to_upper
+
+uppercase_str = str_to_upper('hello')
+print(f'Uppercase string: {uppercase_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_to_lower(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts the input string to lowercase.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be converted to lowercase.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The lowercase version of the input string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_to_lower
+
+lowercase_str = str_to_lower('HELLO')
+print(f'Lowercase string: {lowercase_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_is_palindrome(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the input string is a palindrome.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string is a palindrome, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_is_palindrome
+
+is_palindrome = str_is_palindrome('madam')
+print(f'Is palindrome: {is_palindrome}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_count_occurrences(s, substring)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Counts occurrences of a substring in the input string.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be searched.</li>
+            <li><code>substring</code>: <em>str</em> - The substring to count in the string.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The number of times the substring appears in the string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_count_occurrences
+
+occurrences = str_count_occurrences('hello world', 'o')
+print(f'Occurrences of "o": {occurrences}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_is_alpha(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the string contains only alphabetic characters.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string contains only alphabetic characters, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_is_alpha
+
+is_alpha = str_is_alpha('hello')
+print(f'Is alphabetic: {is_alpha}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_is_digit(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the string contains only digits.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string contains only digits, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_is_digit
+
+is_digit = str_is_digit('12345')
+print(f'Is digit: {is_digit}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_find_substring(s, substring)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Finds the first occurrence of a substring in the input string.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be searched.</li>
+            <li><code>substring</code>: <em>str</em> - The substring to search for.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The index of the first occurrence of the substring, or <code>-1</code> if not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_find_substring
+
+index = str_find_substring('hello world', 'world')
+print(f'Index of "world": {index}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_replace_substring(s, old, new)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Replaces occurrences of a substring with another substring.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be modified.</li>
+            <li><code>old</code>: <em>str</em> - The substring to replace.</li>
+            <li><code>new</code>: <em>str</em> - The substring to replace with.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The modified string with replacements made.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_replace_substring
+
+modified_str = str_replace_substring('hello world', 'world', 'everyone')
+print(f'Modified string: {modified_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_split_words(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Splits the string into words.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be split into words.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>list</em> - A list of words in the string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_split_words
+
+words = str_split_words('hello world')
+print(f'Splitted words: {words}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 6 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_strip_spaces(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Removes leading and trailing spaces from the string.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be stripped.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The string without leading or trailing spaces.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_strip_spaces
+
+stripped_str = str_strip_spaces('  hello world  ')
+print(f'Stripped string: "{stripped_str}"')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 7 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_startswith(s, prefix)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the string starts with a specific prefix.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+            <li><code>prefix</code>: <em>str</em> - The prefix to check for.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string starts with the prefix, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_startswith
+
+starts_with = str_startswith('hello world', 'hello')
+print(f'Starts with "hello": {starts_with}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 8 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_endswith(s, suffix)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the string ends with a specific suffix.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+            <li><code>suffix</code>: <em>str</em> - The suffix to check for.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string ends with the suffix, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_endswith
+
+ends_with = str_endswith('hello world', 'world')
+print(f'Ends with "world": {ends_with}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_isalnum(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if the string contains only alphanumeric characters.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be checked.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the string contains only alphanumeric characters, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_isalnum
+
+is_alnum = str_isalnum('hello123')
+print(f'Is alphanumeric: {is_alnum}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_title_case(s)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Converts the string to title case.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to be converted to title case.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The string in title case.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_title_case
+
+title_case_str = str_title_case('hello world')
+print(f'Title case: {title_case_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_find_substring(s, substring)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Finds the first occurrence of a substring in the string.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s</code>: <em>str</em> - The string to search within.</li>
+            <li><code>substring</code>: <em>str</em> - The substring to find.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>int</em> - The index of the first occurrence of the substring, or <code>-1</code> if not found.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_find_substring
+
+index = str_find_substring('hello world', 'world')
+print(f'Index of "world": {index}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_concat(s1, s2)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Concatenates two strings.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>s1</code>: <em>str</em> - The first string.</li>
+            <li><code>s2</code>: <em>str</em> - The second string.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The concatenated string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_concat
+
+concatenated_str = str_concat('hello', ' world')
+print(f'Concatenated string: {concatenated_str}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>str_join(separator, iterable)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Joins the elements of an iterable into a single string with a separator.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>separator</code>: <em>str</em> - The separator between elements.</li>
+            <li><code>iterable</code>: <em>iterable</em> - The iterable containing elements to be joined.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The joined string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import str_join
+
+joined_str = str_join('-', ['hello', 'world'])
+print(f'Joined string: {joined_str}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>istextfile(file_path)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Checks if a file is a text file by attempting to read its first 1024 bytes.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>file_path</code>: <em>str</em> - The path to the file to check.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the file is a text file, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import istextfile
+
+is_text = istextfile('sample.txt')
+print(f'Is text file: {is_text}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>copytextfromonetoanother(a, b)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Copies the text from the file given by path <code>a</code> to the file given by path <code>b</code>.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The path of the file to copy from.</li>
+            <li><code>b</code>: <em>str</em> - The path of the file to copy to.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the copy operation is successful, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import copytextfromonetoanother
+
+success = copytextfromonetoanother('source.txt', 'destination.txt')
+print(f'Copy successful: {success}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>opentextfile(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Opens the text file given by path <code>a</code> in the default text editor.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The path of the file to open.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the file is opened successfully, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import opentextfile
+
+opened = opentextfile('sample.txt')
+print(f'File opened: {opened}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>addlinetotextfile(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Appends a line of text to the file opened by the <code>opentextfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - The line of text to append.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the line is appended successfully, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import addlinetotextfile
+
+success = addlinetotextfile('This is a new line.')
+print(f'Line appended: {success}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readtextfile(a)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads the contents of the file opened by the <code>opentextfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>a</code>: <em>str</em> - Ignored.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The contents of the file as a string.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readtextfile
+
+file_contents = readtextfile('')
+print(f'File contents: {file_contents}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>cleartextfile()</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Clears the contents of the file opened by the <code>opentextfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>None</code></li>
+        </ul>
+        <p><strong>Returns:</strong> <em>None</em></p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import cleartextfile
+
+cleartextfile()
+print('File content cleared.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 4 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>readspecificlinetextfile(line_number)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Reads a specific line from the file opened by the <code>opentextfile()</code> function.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>line_number</code>: <em>int</em> - The line number to read from the file (1-based index).</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>str</em> - The content of the specified line, or <em>bool</em> - <code>False</code> if the file is not found or the line number is out of range.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import readspecificlinetextfile
+
+line_content = readspecificlinetextfile(2)
+print(f'Second line: {line_content}')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 5 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>overwritetextfile(new_content)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Overwrites the contents of the currently opened text file with new content.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>new_content</code>: <em>str</em> - The new content to write to the file.</li>
+        </ul>
+        <p><strong>Returns:</strong> <em>bool</em> - <code>True</code> if the operation is successful, <code>False</code> otherwise.</p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import overwritetextfile
+
+success = overwritetextfile('New content for the file.')
+print(f'File overwritten: {success}')
+</code></pre>
+    </div>
+</div>
+<!-- Function 1 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>text_file_operations_advanced_mode(folder_path, operation, file_name=None, new_name=None, data=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Performs various text file operations in a specified folder. Operations include creating, writing, appending, reading, clearing, deleting, renaming, and listing files.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>folder_path</code>: <em>str</em> - Path to the folder where operations will be performed.</li>
+            <li><code>operation</code>: <em>str</em> - The operation to perform (e.g., 'create', 'write', 'append', 'read', 'clear', 'delete', 'rename', 'list_files', 'overwrite').</li>
+            <li><code>file_name</code>: <em>str</em> - The file name for the operation (optional, required for most operations).</li>
+            <li><code>new_name</code>: <em>str</em> - New name for the file (used in 'rename', optional).</li>
+            <li><code>data</code>: <em>str</em> - Text data for 'write', 'append', or 'overwrite' operations (optional).</li>
+        </ul>
+        <p><strong>Returns:</strong> 
+            <em>bool, str, or list</em> - Depending on the operation:
+            <ul>
+                <li><strong>'read'</strong>: Returns file content (str) or False on error.</li>
+                <li><strong>'list_files'</strong>: Returns a list of files in the folder or False on error.</li>
+                <li>For other operations: Returns True on success, False on failure.</li>
+            </ul>
+        </p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import text_file_operations_advanced_mode
+
+# Create a file
+text_file_operations_advanced_mode('folder_path', 'create', 'file.txt')
+
+# Write to a file
+text_file_operations_advanced_mode('folder_path', 'write', 'file.txt', data='Hello, World!')
+
+# Read from a file
+content = text_file_operations_advanced_mode('folder_path', 'read', 'file.txt')
+print(content)
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 2 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>text_file_operations_advanced_mode(folder_path, operation='append', file_name=None, new_name=None, data=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Appends a line of text to the file in advanced mode. This function allows for various file operations based on the specified operation type.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>folder_path</code>: <em>str</em> - Path to the folder where the operations will be performed.</li>
+            <li><code>operation</code>: <em>str</em> - The operation to perform (e.g., 'create', 'write', 'append', 'read', 'clear', 'delete', 'rename', 'list_files', 'overwrite').</li>
+            <li><code>file_name</code>: <em>str</em> - The file name for the operation (optional, required for most operations).</li>
+            <li><code>new_name</code>: <em>str</em> - New name for the file (used in 'rename', optional).</li>
+            <li><code>data</code>: <em>str</em> - Text data for 'write', 'append', or 'overwrite' operations (optional).</li>
+        </ul>
+        <p><strong>Returns:</strong> 
+            <em>bool</em> - Returns True on success or False on failure.
+        </p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import text_file_operations_advanced_mode
+
+# Append a line of text to a file
+text_file_operations_advanced_mode('folder_path', 'append', 'file.txt', data='New line of text.')
+</code></pre>
+    </div>
+</div>
+
+<!-- Function 3 -->
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="h4">Function: <code>text_file_operations_advanced_mode(folder_path, operation='delete', file_name=None)</code></h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> Deletes the specified file from the folder in advanced mode.</p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>folder_path</code>: <em>str</em> - Path to the folder where the file is located.</li>
+            <li><code>operation</code>: <em>str</em> - The operation to perform, in this case 'delete'.</li>
+            <li><code>file_name</code>: <em>str</em> - The name of the file to delete.</li>
+        </ul>
+        <p><strong>Returns:</strong> 
+            <em>bool</em> - Returns True if the file was deleted successfully, False on failure.
+        </p>
+        <p><strong>Example Usage:</strong></p>
+        <pre class="bg-light p-3"><code>from ncert_learn import text_file_operations_advanced_mode
+
+# Delete a file
+text_file_operations_advanced_mode('folder_path', 'delete', 'file_to_delete.txt')
+</code></pre>
+    </div>
+</div>
+</div>
+        <!-- Add more functions here as needed -->
+        
+        <footer class="text-center mt-5">
+            <p>&copy; 2024 ncert_learn | Documentation by Muhammed Shafin P</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
